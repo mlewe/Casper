@@ -1267,12 +1267,12 @@ body.page-template .post-title {
 }
 
 .tag-head.main-header {
-    height: 40vh;
+    height: 20vh;
     min-height: 180px;
 }
 
 .author-head.main-header {
-    height: 40vh;
+    height: 20vh;
     min-height: 180px;
 }
 
@@ -1579,7 +1579,7 @@ body.page-template .post-title {
 
 /* On page2+ make all the headers smaller */
 .paged .main-header {
-    max-height: 30vh;
+    max-height: 15vh;
 }
 
 /* On page2+ show extra pagination controls at the top of post list */
