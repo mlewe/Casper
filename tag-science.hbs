@@ -1,0 +1,32 @@
+{{!< default}}
+{{!-- The tag above means - insert everything in this file into the {body} of the default.hbs template --}}
+
+{{!-- If we have a tag cover, display that - else blog cover - else nothing --}}
+<header class="main-header tag-head {{#if tag.image}}" style="background-image: url({{tag.image}}){{else}}{{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}{{/if}}">
+    <nav class="main-nav overlay clearfix">
+        {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}
+        {{#if @blog.navigation}}
+            <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
+        {{/if}}
+    </nav>
+    <div class="vertical">
+        {{#tag}}
+        <div class="main-header-content inner">
+            <h1 class="page-title">Ars Cognitionis</h1>
+            <h2 class="page-description">
+                 I use this page to teach the internet, in easy-to-read summaries, the fascinating things I learn by reading scientific literature on amusing or smirk-worthy topics.<br/>
+                 You can see what I've covered so far and some of my reading list <a href="https://docs.google.com/spreadsheets/d/1G9PeKumI-zVTt8ot35_v9OTQ5PGnJmkKVxfyC-9YiHU/edit?usp=sharing">here</a>.<br/>
+                 Find out more about me on the <a href="/about/">about</a> page; tell me I'm wrong through <a href="mailto:happyturtlethings@gmail.com">e-mail</a>.<br/>
+            </h2>
+        </div>
+        {{/tag}}
+    </div>
+</header>
+
+{{!-- The main content area on the homepage --}}
+<main class="content" role="main">
+
+    {{!-- The tag below includes the post loop - partials/loop.hbs --}}
+    {{> "loop"}}
+
+</main>
