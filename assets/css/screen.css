@@ -585,6 +585,14 @@ button {
     width: 80%;
 }
 
+.main-header-content .post-title {
+    margin-top: 4rem;
+}
+
+.main-header-content .post-title, .main-header-content .post-content {
+    text-align: left;
+}
+
 .main-nav {
     position: relative;
     padding: 35px 40px;
