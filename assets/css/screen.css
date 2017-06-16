@@ -189,6 +189,7 @@ body {
     font-size: 1.8rem;
     line-height: 1.5em;
     color: #fff;
+    background-color: #000;
     -webkit-font-feature-settings: 'kern' 1;
     -moz-font-feature-settings: 'kern' 1;
     -o-font-feature-settings: 'kern' 1;
@@ -570,13 +571,14 @@ button {
 .main-header {
     position: relative;
     display: table;
-    width: 100%;
+    width: 30%;
     height: 100vh;
     margin-bottom: 5rem;
     text-align: center;
     background: #222 no-repeat center center;
     background-size: cover;
     overflow: hidden;
+    float: left;
 }
 
 .main-header .inner {
@@ -781,9 +783,9 @@ button {
 /* Every post, on every page, gets this style on its <article> tag */
 .post {
     position: relative;
-    width: 80%;
+    width: 60%;
     max-width: 1000px;
-    margin: 4rem auto;
+    margin: 4rem auto 4rem 35%;
     padding-bottom: 4rem;
     border-bottom: #111 1px solid;
     word-wrap: break-word;
@@ -890,9 +892,11 @@ body.page-template .post-title {
    5. Single Post - When you click on an individual post
    ========================================================================== */
 
-.post-template .post-header,
-.page-template .post-header {
+.post-template .post-head,
+.page-template .post-head {
    margin-bottom: 3.4rem;
+   float: none;
+   width: 100%;
 }
 
 .post-template .post-title,
@@ -926,6 +930,8 @@ body.page-template .post-title {
     margin-top: 0;
     border-bottom: none;
     padding-bottom: 0;
+    width: 80%;
+    margin: 0px auto 4rem;
 }
 
 /* Kill that stylish little circle that was on the border, too */
@@ -1117,6 +1123,12 @@ body.page-template .post-title {
     background-size: cover;
     background-position: center center;
     border-radius: 100%;
+}
+
+.author-profile.inner {
+    width: 30%;
+    margin: 0;
+    position: absolute;
 }
 
 .author-profile .author-image {
