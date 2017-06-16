@@ -931,7 +931,7 @@ body.page-template .post-title {
     border-bottom: none;
     padding-bottom: 0;
     width: 80%;
-    margin: 0px auto 4rem;
+    margin: 0 auto 4rem;
 }
 
 /* Kill that stylish little circle that was on the border, too */
@@ -1127,7 +1127,7 @@ body.page-template .post-title {
 
 .author-profile.inner {
     width: 30%;
-    margin: 0;
+    margin: 120px 0;
     position: absolute;
 }
 
@@ -1337,9 +1337,9 @@ body.page-template .post-title {
 /* The main wrapper for our pagination links */
 .pagination {
     position: relative;
-    width: 80%;
-    max-width: 710px;
-    margin: 4rem auto;
+    width: 60%;
+    max-width: 1000px;
+    margin: 4rem auto 4rem 35%;
     font-family: "Open Sans", sans-serif;
     font-size: 1.3rem;
     color: #9EABB3;
@@ -1386,9 +1386,13 @@ body.page-template .post-title {
 .extra-pagination {
     display: none;
     border-bottom: #111 1px solid;
+    width: 60%;
+    max-width: 1000px;
+    margin: 0 auto 0 35%;
 }
 .extra-pagination .pagination {
     width: auto;
+    margin: 4rem auto;
 }
 
 /* On page2+ make all the headers smaller */
