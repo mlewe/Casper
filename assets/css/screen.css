@@ -585,6 +585,14 @@ button {
     width: 80%;
 }
 
+.main-header-content .post-title {
+    margin-top: 4rem;
+}
+
+.main-header-content .post-title, .main-header-content .post-content {
+    text-align: left;
+}
+
 .main-nav {
     position: relative;
     padding: 35px 40px;
@@ -1075,12 +1083,12 @@ body.page-template .post-title {
 }
 
 .tag-head.main-header {
-    height: 40vh;
+    height: 20vh;
     min-height: 180px;
 }
 
 .author-head.main-header {
-    height: 40vh;
+    height: 20vh;
     min-height: 180px;
 }
 
@@ -1397,7 +1405,7 @@ body.page-template .post-title {
 
 /* On page2+ make all the headers smaller */
 .paged .main-header {
-    max-height: 30vh;
+    max-height: 15vh;
 }
 
 /* On page2+ show extra pagination controls at the top of post list */
@@ -1665,6 +1673,8 @@ body.page-template .post-title {
     .main-header {
         margin-bottom: 15px;
         height: 40vh;
+        width: 100%;
+        float: none;
     }
 
     .no-cover.main-header {
@@ -1853,6 +1863,12 @@ body.page-template .post-title {
 
     .author-profile {
         padding-bottom: 2rem;
+    }
+
+    .author-profile.inner {
+        width: 100%;
+        margin: 0;
+        position: static;
     }
 
     .post-head.main-header {
