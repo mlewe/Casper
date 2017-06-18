@@ -209,7 +209,7 @@ h4, h5, h6 {
     -webkit-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
     -moz-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
     -o-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
-    color: #eee;
+    color: #ccc;
     line-height: 1.15em;
     margin: 0 0 0.4em 0;
     text-rendering: geometricPrecision;
@@ -914,7 +914,7 @@ body.page-template .post-title {
 
 .post-template .post-meta,
 .page-template .post-meta {
-    margin: 0;
+    margin: 0 0 1.25rem;
 }
 
 .post-template .post-date,
@@ -1268,7 +1268,7 @@ body.page-template .post-title {
 
 .read-next-story h2 {
     margin-top: 1rem;
-    color: #fff;
+    color: #ccc;
 }
 
 .read-next-story p {
@@ -1278,7 +1278,7 @@ body.page-template .post-title {
 
 /* Special styles for posts with no cover images */
 .read-next-story.no-cover {
-    background: #f5f8fa;
+    background: #000;
 }
 
 .read-next-story.no-cover:before {
@@ -1286,16 +1286,12 @@ body.page-template .post-title {
 }
 
 .read-next-story.no-cover .post:before {
-    color: rgba(0,0,0,0.5);
-    border-color: rgba(0,0,0,0.2);
 }
 
 .read-next-story.no-cover h2 {
-    color: rgba(0,0,0,0.8);
 }
 
 .read-next-story.no-cover p {
-    color: rgba(0,0,0,0.5);
 }
 
 /* if there are two posts without covers, put a border between them */
