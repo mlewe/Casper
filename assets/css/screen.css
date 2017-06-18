@@ -1673,6 +1673,8 @@ body.page-template .post-title {
     .main-header {
         margin-bottom: 15px;
         height: 40vh;
+        width: 100%;
+        float: none;
     }
 
     .no-cover.main-header {
@@ -1861,6 +1863,12 @@ body.page-template .post-title {
 
     .author-profile {
         padding-bottom: 2rem;
+    }
+
+    .author-profile.inner {
+        width: 100%;
+        margin: 0;
+        position: static;
     }
 
     .post-head.main-header {
