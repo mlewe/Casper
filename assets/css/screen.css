@@ -201,7 +201,7 @@ body {
 }
 
 ::selection {
-    background: #555;
+    background: rgba(85, 85, 85, 0.99);
 }
 
 h1, h2, h3,
@@ -1083,12 +1083,12 @@ body.page-template .post-title {
 }
 
 .tag-head.main-header {
-    height: 20vh;
+    height: 40vh;
     min-height: 180px;
 }
 
 .author-head.main-header {
-    height: 20vh;
+    height: 40vh;
     min-height: 180px;
 }
 
@@ -1401,7 +1401,7 @@ body.page-template .post-title {
 
 /* On page2+ make all the headers smaller */
 .paged .main-header {
-    max-height: 15vh;
+    max-height: 30vh;
 }
 
 /* On page2+ show extra pagination controls at the top of post list */
