@@ -455,6 +455,7 @@ textarea, select, input {
     font-size: 1.6rem;
     font-weight: 100;
     line-height: 1.4em;
+    color: #000;
     background: #fff;
     border: #e7eef2 1px solid;
     border-radius: 4px;
@@ -644,23 +645,43 @@ button {
     color: #fff;
 }
 
+.nav-right {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    height: 30px;
+}
+
+.nav-right li input {
+    height: 28px;
+    padding: 0 9px;
+    margin-right: 5px;
+}
+
+#search-results {
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    padding: 15px;
+    width: 600px;
+    background: #000;
+    z-index: 20;
+}
+
 .subscribe-button {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     display: block;
-    position: absolute;
-    right: 10px;
-    top: 5px;
     height: 30px;
-    padding: 0 20px;
+    padding: 0 20px !important;
     color: #111 !important; /* Overides `.nav a:link, .nav a:visited` colour */
     text-align: center;
-    font-size: 12px;
+    font-size: 12px !important;
     font-family: "Open Sans", sans-serif;
     text-transform: uppercase;
     text-decoration: none;
-    line-height: 28px;
+    line-height: 28px !important;
     border-radius: 3px;
     background: #fff;
     transition: all ease 0.3s;
@@ -1677,6 +1698,13 @@ body.page-template .post-title {
         border-left: none;
     }
 
+    #search-field {
+        width: 100px;
+    }
+
+    #search-results {
+        width: 450px;
+
 }
 
 
@@ -1940,6 +1968,10 @@ body.page-template .post-title {
 
     .read-next .post {
         width: 100%;
+    }
+
+    #search-field, #search-results {
+        display: none;
     }
 
 }
