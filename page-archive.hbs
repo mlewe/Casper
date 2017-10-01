@@ -22,7 +22,7 @@
         <section class="post-content">
             {{content}}
             <br>
-            {{#get "posts" limit="all" filter="tag:cooking"}}
+            {{#get "posts" limit="all"}}
                 <ul>
                 {{#foreach posts}}
                     <li><a style="color:#83f2f6" href="{{url}}">{{title}}</a></li>
