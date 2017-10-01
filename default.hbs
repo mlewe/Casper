@@ -28,6 +28,8 @@
     {{!-- The blog navigation links --}}
     {{navigation}}
 
+    <section id="search-results"></section>
+
     <div class="site-wrapper">
 
         {{!-- All the main content gets inserted here, index.hbs, post.hbs, etc --}}
@@ -49,6 +51,16 @@
     <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
     {{!-- The main JavaScript file for Casper --}}
     <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
+    {{!-- GhostHunter search engine --}}
+    <script type="text/javascript" src="{{asset "js/jquery.ghostHunter.min.js"}}"></script>
+    <script type="text/javascript">
+        $("#search-field").ghostHunter({
+            results: "#search-results",
+            onKeyUp: true,
+            zeroResultsInfo: false,
+            result_template: "\{{pubDate}}<h4><a href='\{{link}}'>\{{title}}</a></h4>"
+        });
+    </script>
 
 </body>
 </html>
