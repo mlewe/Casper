@@ -556,6 +556,7 @@ button {
 
 /* Wraps the main content & footer */
 .site-wrapper {
+    margin-top: 40px;
     position: relative;
     z-index: 10;
     min-height: 100%;

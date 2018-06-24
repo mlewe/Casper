@@ -3,8 +3,12 @@
 {{!-- The comment above "< default" means - insert everything in this file into
     the {{{body}}} of the default.hbs template, containing the blog header/footer. --}}
 
+{{> sidebar}}
+
+
 {{!-- Everything inside the #post tags pulls data from the post --}}
 {{#post}}
+<main class="content" role="main">
 
 <header class="main-header post-head {{#has tag="#showimage"}}{{#if feature_image}}" style="background-image: url({{img_url feature_image}}){{else}}no-cover{{/if}}{{else}}no-cover{{/has}}">
     <nav class="main-nav {{#has tag="#showimage"}}{{#if feature_image}}overlay{{/if}}{{/has}} clearfix">
@@ -12,7 +16,6 @@
     </nav>
 </header>
 
-<main class="content" role="main">
     <article class="{{post_class}}">
 
         <header class="post-header">
