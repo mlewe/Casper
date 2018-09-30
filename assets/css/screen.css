@@ -988,21 +988,21 @@ body.page-template .post-title {
 
 /* Keep images centered, and allow images wider than the main
    text column to break out. */
-.post-content img {
+/* .post-content img {
     display: block;
     max-width: 126%;
     height: auto;
-    padding: 0.6em 0;
+    padding: 0.6em 0; */
     /* Centers an image by (1) pushing its left edge to the
        center of its container and (2) shifting the entire image
        in the opposite direction by half its own width.
        Works for images that are larger than their containers. */
-    position: relative;
+/*    position: relative;
     left: 50%;
     -webkit-transform: translateX(-50%); /* for Safari and iOS */
-    -ms-transform: translateX(-50%); /* for IE9 */
-    transform: translateX(-50%);
-}
+/*    -ms-transform: translateX(-50%); /* for IE9 */
+/*    transform: translateX(-50%);
+} */
 
 .footnotes {
     font-style: italic;
@@ -1103,6 +1103,125 @@ body.page-template .post-title {
     color: #dd4b39;
 }
 
+ /* 7.6. Koenig Styles
+ /* ---------------------------------------------------------- */
+
+.post-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 920px;
+}
+
+.post-template .post-content > p:first-child {
+    font-size: 1.25em;
+    line-height: 1.5em;
+}
+
+.post-content .kg-image {
+    max-width: 100%;
+}
+
+/* Preventing full-width image overlap with post image.  */
+.post-full-image + .post-content .kg-content *:first-child .kg-image {
+    width: 100%;
+}
+
+.post-content .kg-width-wide .kg-image {
+    max-width: 1040px;
+}
+
+.post-content .kg-width-full .kg-image {
+    max-width: 70vw;
+}
+
+.post-content figcaption {
+    font-size: 80%;
+    line-height: 1.6em;
+    text-align: center;
+}
+
+.kg-image-card,
+.kg-gallery-card {
+    margin: 0 0 1.5em;
+}
+
+.kg-image-card figcaption,
+.kg-gallery-card figcaption {
+    margin: -1.0em 0 1.5em;
+}
+
+ .kg-embed-card {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin: 1.5em 0 3em;
+     min-width: 100%;
+ }
+
+ .kg-embed-card figcaption {
+     margin: 0.5em 0 0;
+ }
+
+ .kg-embed-card .fluid-width-video-wrapper {
+     margin: 0;
+ }
+
+ .kg-image-full + figcaption {
+     padding: 0 1.5em;
+ }
+
+ @media (max-width: 1486px) {
+     .post-content .kg-width-full .kg-image {
+         width: 70vw;
+    }
+}
+
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6,
+.post-content p,
+.post-content ul,
+.post-content ol,
+.post-content dl,
+.post-content pre,
+.post-content blockquote,
+.post-comments,
+.footnotes {
+    min-width: 100%;
+}
+
+.kg-gallery-container {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5em auto;
+    max-width: 1040px;
+    width: 100vw;
+}
+
+.kg-gallery-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.kg-gallery-image img {
+    display: block;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.kg-gallery-row:not(:first-of-type) {
+    margin: 0.75em 0 0 0;
+}
+
+.kg-gallery-image:not(:first-of-type) {
+    margin: 0 0 0 0.75em;
+}
 
 /* ==========================================================================
    6. Author profile
