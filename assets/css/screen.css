@@ -50,6 +50,12 @@ body {
     text-indent: -9999px;
 }
 
+.img-float-left {
+    float: left;
+    width: 300px;
+    margin: 0 1.5em 1.5em 0 !important;
+}
+
 
 /* 2. Layout - Page building blocks
 /* ---------------------------------------------------------- */
@@ -63,6 +69,7 @@ body {
 .site-main {
     z-index: 100;
     flex-grow: 1;
+    background: #fff;
 }
 
 /* Full width page blocks */
